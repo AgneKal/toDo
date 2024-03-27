@@ -6,22 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>toDo</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <script src="script.js" defer></script>
 </head>
 
 <body>
     <div id="container">
         <div id="task_input">
-            <input type="text" name="" placeholder="užduotis" id="input_form">
-            <button class="btn" id="btnAddTask">Įrašyti</button>
+            <input type="text" name="" placeholder="Nauja užduotis" id="input_form" class="alumni-sans-normal">
+            <button class="btn alumni-sans-bold" id="btnAddTask">Įrašyti</button>
         </div>
         <div id="tasks">
-            <div id="tasks_header">Mano užduotys</div>
-            <ul id="tasks_list">
+            <div id="tasks_header" class="alumni-sans-normal">Mano užduotys</div>
+            <ul id="tasks_list" class="alumni-sans-normal">
                 <li>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem dolore excepturi, recusandae fugiat cumque dolorum quaerat. Eos earum dignissimos dolorem? Maiores id quis tempore placeat est? Adipisci illum dolor quis.</li>
                 <li>Antra užduotis</li>
             </ul>
-            <button class="btn" id="btnDeleteTasks">Ištrinti užduotis</button>
+            <button class="btn alumni-sans-bold" id="btnDeleteTasks">Ištrinti užduotis</button>
         </div>
     </div>
 </body>
