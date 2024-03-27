@@ -12,6 +12,7 @@ body {
     background-image: url(./images/pexels-shonejai-1227511\ \(2\).jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
     height: 100vh;
 }
 
