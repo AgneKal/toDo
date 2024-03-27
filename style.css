@@ -32,13 +32,13 @@ body {
 }
 
 #input_form {
-    height: 40px;
+    height: 46px;
     width: 40%;
     border: 1px solid lightgray;
     border-radius: 10px;
     padding-left: 8px;
     color: #A1563D;
-    font-size: 20px;
+    font-size: 24px;
     background-color: #F5F2ED;
 }
 
@@ -96,14 +96,14 @@ body {
     letter-spacing: 1px;
 }
 
-#btnAddTask {
+#btn_add_task {
     background-color:#81B3B4;
 
 }
 
-#btnDeleteTasks {
+#btn_delete_tasks {
     background-color: #A1563D;
-    margin: 20px;
+    margin-top: 20px;
     align-self: center;
 }
 

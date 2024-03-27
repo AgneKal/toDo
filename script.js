@@ -1,7 +1,7 @@
-const addBtn = document.getElementById("add_task");
+const addBtn = document.getElementById("btn_add_task");
 const list = document.getElementById("tasks_list");
-const taskName = document.getElementById("task_name");
-const clearTasks = document.getElementById("clear_tasks");
+const taskName = document.getElementById("input_form");
+const clearTasks = document.getElementById("btn_delete_tasks");
 
 let tasks = [];
 
@@ -9,7 +9,7 @@ const showTasks = () => {
     list.innerHTML = "";
     tasks.forEach((t) => {
         const newTask = document.createElement("li");
-        newTask.className = "list-group-item";
+        //newTask.className = "list-group-item";
         newTask.textContent = t;
         list.appendChild(newTask);
     });
@@ -17,16 +17,20 @@ const showTasks = () => {
 
 const addTask = () => {
     const text = taskName.value;
-    tasks.push(text);
-    taskName.value = "";
-    showTasks();
-    localStorage.setItem("tasks", JSON.stringify(tasks));
+    if (text != '') {
+        tasks.push(text);
+        taskName.value = "";
+        showTasks();
+        localStorage.setItem("tasks", JSON.stringify(tasks));
+    }
 }
 
 const clearList = () => {
+    const empty = document.createElement("li");
     tasks = [];
     localStorage.removeItem("tasks");
     showTasks();
+    list.appendChild(empty)
 }
 
 addBtn.onclick = addTask;
