@@ -5,10 +5,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>toDo</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./favicon//favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./favicon//favicon-16x16.png">
+    <link rel="manifest" href="./favicon//site.webmanifest">
+    <link rel="mask-icon" href="./favicon//safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
     <script src="script.js" defer></script>
 </head>
 
@@ -16,14 +24,14 @@
     <div id="container">
         <div id="task_input">
             <div id="input_shell"><input type="text" name="" placeholder="Nauja užduotis" id="input_form" class="alumni-sans-normal"></div>
-            <button class="btn alumni-sans-bold" id="btn_add_task">Įrašyti</button>
+            <button class="btn alumni-sans-bold" id="btn_add_task"><i class="fa-solid fa-floppy-disk"></i>Įrašyti</button>
         </div>
         <div id="tasks">
             <div id="tasks_header" class="alumni-sans-normal">Mano užduotys</div>
             <ul id="tasks_list" class="alumni-sans-normal">
                 <li></li>
             </ul>
-            <button class="btn alumni-sans-bold" id="btn_delete_tasks">Ištrinti užduotis</button>
+            <button class="btn alumni-sans-bold" id="btn_delete_tasks"><i class="fa-solid fa-eraser"></i>Ištrinti užduotis</button>
         </div>
     </div>
 </body>
